@@ -1,5 +1,5 @@
 #-----------------------------------------------
-#100DaysOfCode 008/100 - List Conprehesions
+#100DaysOfCode 008.1/100 - List Comprehesions
 #   2020-06-17
 #
 #  I had some extra time so I am getting more coding in

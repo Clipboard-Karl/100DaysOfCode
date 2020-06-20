@@ -1,0 +1,6 @@
+elephant
+horse
+cow
+alligator
+zebra
+monkey

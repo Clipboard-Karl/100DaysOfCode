@@ -24,7 +24,7 @@ import folium
 #  Create a map object
 #      This is a layer - other layers can be added
 #map_object = folium.Map(location=[40.2011,-77.2498], zoom_start=8, tiles="Stamen Terrain")
-map_object = folium.Map(location=[40.2011,-77.2498], zoom_start=8)
+map_object = folium.Map(location=[10.2011,-77.2498], zoom_start=8)
 #  maps are created in HTML format
 #  elements can be saved to the map
 #      in this case a marker will be added

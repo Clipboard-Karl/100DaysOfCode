@@ -1,0 +1,18 @@
+These notes are for Atom as I am using it on Ubuntu
+
+Keyboard Shortcuts:
+-------------------
+Ctrl+Shift+P - toggles the Atom Command Palette
+
+Command Palette Commands:
+-------------------------
+dark mode - toggles between dark and light mode
+    Package - dark-mode
+
+
+
+Installed Packages:
+-------------------
+dark-mode
+   Switches between light and dark mode with light sensing auto options
+   https://atom.io/packages/dark-mode

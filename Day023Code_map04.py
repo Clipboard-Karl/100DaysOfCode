@@ -2,7 +2,12 @@
 #     assignment.  It took some trouble shooting however I am now running from
 #     my local GitHub clone.  So GitHub will be my version control and not
 #     me renaming files and saving.
+#     This could us a major clean up an organization but for now I am focued on
+#     learning the code.  Maybe later.
 #
+#
+#  20200710 - 100DaysOfCode 025/100 - Popup windows on maps
+#                Adding logic for marker color
 #  20200708 - 100DaysOfCode 024/100 - Adding points form a .txt file
 #             The color was not changing because I was using colors not colors
 #             I am concerned that the .txt file would need error checking first
@@ -32,7 +37,10 @@ import folium
 #  Create a map object
 #      This is a layer - other layers can be added
 #-----------------------------
-map_object = folium.Map(location=[40.201452,-77.201452], zoom_start=12)
+#  The next line will center and zoom on Carlisle
+#map_object = folium.Map(location=[40.201452,-77.201452], zoom_start=12)
+#  This will center on the US
+map_object =folium.Map(location=[39.09,-94.85], zoom_start=5)
 #-----------------------------
 #  Map styles can be changed with the tiles parameter
 #  This next line is directly from the lesson and does not point to carlisle
@@ -66,10 +74,40 @@ volcano_data = pandas.read_csv("Files/Mapping/Volcanoes.txt")
 #               be said about this later - or the file was validated ??????
 volcano_lat = list(volcano_data["LAT"])
 volcano_lon = list(volcano_data["LON"])
+volcano_elev = list(volcano_data["ELEV"])
+volcano_name = list(volcano_data["NAME"])
+#
+#  This function will adjust volcano icon colors based on Elevation
+def color_producer(elevation):
+    if elevation < 1000:
+        return 'green'
+    elif 1000 <= elevation < 3000:
+        return 'orange'
+    else:
+        return 'red'
+#
+#  HTML can be added to the Popup - this will allow a google search of the name
+html = """
+Volcano name:<br>
+<a href="https://www.google.com/search?q=%%22%s%%22" target="_blank">%s</a><br>
+Elevation: %s m
+"""
 #
 #  iterate throught the lists with the zip function
-for lt, ln in zip(volcano_lat, volcano_lon):
-    map_fg.add_child(folium.Marker(location=[lt, ln], popup=".txt Loop", icon=folium.Icon(color="red")))
+for lt, ln, el, name in zip(volcano_lat, volcano_lon, volcano_elev, volcano_name):
+#  the popup parameter is expecting a string. This didn't error however I will
+#  convert the float to a string
+#    map_fg.add_child(folium.Marker(location=[lt, ln], popup="Elevation: "+str(el), icon=folium.Icon(color="red")))
+#
+#     the follow is for adding HTML to the Popup
+    iframe = folium.IFrame(html=html % (name, name, el), width=200, height=100)
+    map_fg.add_child(folium.CircleMarker(location=[lt, ln],
+                                         radius = 6,
+                                         popup=folium.Popup(iframe),
+                                         fill_color=color_producer(el),
+                                         color = 'gray',
+                                         fill_opacity=0.7,
+                                         fill=True))
 #
 map_object.add_child(map_fg)
 #

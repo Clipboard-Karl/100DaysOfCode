@@ -38,9 +38,9 @@ import folium
 #      This is a layer - other layers can be added
 #-----------------------------
 #  The next line will center and zoom on Carlisle
-#map_object = folium.Map(location=[40.201452,-77.201452], zoom_start=12)
+map_object = folium.Map(location=[40.201452,-77.201452], zoom_start=16)
 #  This will center on the US
-map_object =folium.Map(location=[39.09,-94.85], zoom_start=5)
+#map_object =folium.Map(location=[39.09,-94.85], zoom_start=5)
 #-----------------------------
 #  Map styles can be changed with the tiles parameter
 #  This next line is directly from the lesson and does not point to carlisle
@@ -56,7 +56,7 @@ map_fg = folium.FeatureGroup("Carlisle Map")
 #  Elements can be saved to the map
 #      The next lines will add a markers
 #---------------------------
-map_fg.add_child(folium.Marker(location=[40.201452,-77.201452], popup="Carlisle is here", icon=folium.Icon(color='green')))
+map_fg.add_child(folium.Marker(location=[40.2015,-77.189277], popup="Carlisle is here", icon=folium.Icon(color='green')))
 map_fg.add_child(folium.Marker(location=[40.2023587,-77.2065121], popup="Leo's", icon=folium.Icon(color='green')))
 #---------------------------
 #  markers can be added with a for loop itteration

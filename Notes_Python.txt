@@ -1,0 +1,7 @@
+These notes are for Python as I am using it on Ubuntu
+
+  in the python interactive shell:
+    use dir(folium) to get a list of objects
+      help(folium.map) --- will show what can be passed to the map object
+    scroll there is a lot of info there
+     Q - to exit help

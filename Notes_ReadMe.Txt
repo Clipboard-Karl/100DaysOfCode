@@ -10,3 +10,23 @@ the computers and coding were different.
 Bonus note:  I feel compelled to keep lines under 80 characters
 12345678901234567890123456789012345678901234567890123456789012345678901234567890
          1         2         3         4         5         6         7         8
+
+2020-07-13 - I will be trying to keep with the following format as I go forward
+--------------------------------------------------------------------------------
+These notes are for ___________
+
+Installation:
+-------------
+
+
+Keyboard Shortcuts:
+-------------------
+
+
+
+Notes:
+------
+
+
+References:
+-----------

@@ -1,0 +1,20 @@
+These notes are for flask
+
+Installation:
+-------------
+karl@StanLee:~$ pip3 install flask
+
+
+Keyboard Shortcuts:
+-------------------
+
+
+
+Notes:
+------
+To use flask in python -- from flask import Flask
+
+
+
+References:
+-----------

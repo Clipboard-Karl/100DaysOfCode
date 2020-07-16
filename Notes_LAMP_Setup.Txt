@@ -1,0 +1,14 @@
+I need to set up a local server so I can have a local install of WordPress.
+
+This was not successful in the past so my first step is to back up files.
+
+I need:
+PHP
+Apache
+MariaDB
+
+Local by Flywheel is recommended by the class but these may be possible
+XAMPP
+MAMP
+AMPPS
+Bitnami WordPress

@@ -5,3 +5,12 @@ These notes are for Python as I am using it on Ubuntu
       help(folium.map) --- will show what can be passed to the map object
     scroll there is a lot of info there
      Q - to exit help
+
+To set up a virtual python environment to keep things clean
+This did not work
+       pip3 install virtualenv <---- this did not work
+
+sudo apt-get install python3-venv
+
+the following command will create a virtual Folder
+python3 -m venv virtual_python_site

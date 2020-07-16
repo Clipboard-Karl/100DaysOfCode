@@ -14,7 +14,9 @@ Notes:
 ------
 To use flask in python -- from flask import Flask
 
+To shutdown CTRL+C
 
 
 References:
 -----------
+Flask website:   https://flask.palletsprojects.com/en/1.1.x/

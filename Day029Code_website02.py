@@ -1,7 +1,8 @@
 #100DaysOfCode 029/100 - Website continued
 #
 #  20200716 - 100DaysOfCode 029/100 - Website
-#
+#  20200719 - 100DaysOfCode 031/100 - Deploy website to server
+#             See the Heroku.txt file for details
 #
 #
 #

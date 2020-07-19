@@ -1,0 +1,98 @@
+
+These notes are for Heroku___________
+
+Installation:
+-------------
+Created an account at heroku.com
+Installed the Heroku tool belt from the command line:
+    karl@StanLee:~/github/100DaysOfCode$ sudo snap install --classic heroku
+    Note - git is part of the heroku tool belt
+
+
+Keyboard Shortcuts:
+-------------------
+
+Notes:
+------
+The following is all from the command line:
+  heroku login <-- log in happened automatically through FireFox
+  heroku create ksmith-site  <-- creates and app - if name is available
+  heroku apps <-- lists apps
+
+  In browser to visit app - https://ksmith-site.herokuapp.com/
+
+Heroku requires a requirements.txt to establish a list of required packages.
+  This list is generate with pip3 freeze
+  **** Note - this should come from your virtual python environment.  I don't
+              have a virtual environment.  I used my development environment
+              but only got the packages listed on the instructors pip freeze.
+
+  I installed gunicorn - pip3 install gunicorn
+    this is an http server that heroku needs
+
+Created a procfile <-- no extension
+   procfile only contains the following line:
+
+      BAD ----- web:  gunicorn script1:app
+
+      web:  gunicorn Day029Code_webssite02:app
+
+      This tell heroku to use gunicorn as a web server and script1:app is the
+         app line for flask in the website file
+
+ Create runtime.txt file  <-- contains python version
+   check to see what runtimes are supported:
+       https://devcenter.heroku.com/articles/python-runtimes
+
+I changed to the file with my website and created a repository
+   karl@StanLee:~/github/100DaysOfCode/Files/website$ git init
+
+I moved all the website related file to the this location.
+
+   git add .  <-- add files to the current directory
+
+   git commit -m "first commint for horoku site"
+
+   heroku git:remote --app ksmith-site   <-- point to the app
+
+   git push heroku master
+
+   heroku open  <-- opens the browser from command line
+
+   heroku info <-- get info about current app
+
+
+   **** is looked like all went well but it didn't - time to trouble shoot
+
+   heroku logs --tail  <-- view run time logs
+
+      Found now web dynos running.
+
+    heroku ps  <--- check status of web dynos
+
+        No dynos are on
+
+    heroku ps:scale web=1  <-- add a dyno
+
+        it looks like my procfile was wrong
+
+  To push changes to heroku
+
+    git add .
+    git commmit -m "note goes here"
+
+    This only update the 2to file I changed but also shows a deletion?
+
+    git push heroku master
+
+
+
+
+
+
+
+
+
+
+References:
+-----------

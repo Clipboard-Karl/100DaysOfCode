@@ -1,0 +1,23 @@
+These notes are for numpy
+
+
+
+Installation:
+-------------
+import numpy as np
+
+
+Keyboard Shortcuts:
+-------------------
+
+
+Notes:
+------
+
+array_1=np.empty(5)
+
+
+
+
+References:
+-----------

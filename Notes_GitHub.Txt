@@ -1,0 +1,22 @@
+
+These notes are for GitHub
+
+I am connecting GitHub to Atom on Ubuntu
+
+Keyboard Shortcuts:
+-------------------
+
+
+
+Notes:
+------
+Login to Github and create a repository.  Copy the url.
+    https://github.com/Clipboard-Karl/Sudoku-Fun-Project.git
+
+In Atom:
+      Ctrl+Shift+P - toggles the Atom Command Palette
+      Alt+G or GitHub:Clone
+      Paste link and press create clone button
+
+References:
+-----------

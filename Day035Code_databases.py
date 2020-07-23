@@ -1,13 +1,19 @@
-#100DaysOfCode 034/100 - Databases
+#100DaysOfCode 035/100 - Databases
 #
-#  20200722 - 100DaysOfCode 034/100 - Databases and Python
-#      sqlite3 - built in python library
 #  20200723 - 100DaysOfCode 035/100 - Databases and Python - continued
+#             convert from sqlite3 to PostgreSQL
 #
+#    NOTE  -  This does not work - I had issues installing PostgreSQL.
+#             I chose to skip because I want to focus on PHP with wordpress
+#             after I finish this clas 
 #
 ################################################################################
+#  Libraries need to be installed:
+#     PostgreSQL - https://www.postgresql.org/download/linux/ubuntu/
 #
-import sqlite3
+#  pip3 install psycopg2
+#
+import pyscopg2
 
 def create_table():
     # Connect to or create a new data base - created if it doesn't exist

@@ -1,7 +1,8 @@
 #100DaysOfCode 038/100 - Database for books app
 #
-#  20200728 - 100DaysOfCode 038/100 - Database for books - start
+#  20200728 - 100DaysOfCode 038/100 - Database for books - #
 #  20200729 - 100DaysOfCode 039/100 - Database for books - continued
+#             This code started as Day038Code_db_tkinter.py
 #             To keep with the class - I am renaming this Day38_frontend.py
 #
 ###############################################################################

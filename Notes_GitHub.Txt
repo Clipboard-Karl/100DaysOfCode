@@ -18,5 +18,13 @@ In Atom:
       Alt+G or GitHub:Clone
       Paste link and press create clone button
 
+To connect Atom.io to GitHub:
+   https://wwww.github.atom.io/Login
+
+   This will generate a token to be used in atom.
+
+   You may need to log out of github before you can reconnect if the screen is blank
+
+
 References:
 -----------

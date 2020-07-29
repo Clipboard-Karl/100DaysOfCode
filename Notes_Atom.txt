@@ -10,9 +10,12 @@ dark mode - toggles between dark and light mode
     Package - dark-mode
 
 
-
 Installed Packages:
 -------------------
 dark-mode
    Switches between light and dark mode with light sensing auto options
    https://atom.io/packages/dark-mode
+
+To Do:
+------
+Research connection to GitHub
